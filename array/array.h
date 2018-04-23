@@ -7,7 +7,9 @@
 
 #ifndef ARRAY_H_
 #define ARRAY_H_
-
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
 /*
 1. Insert in an array.
 2. Delete from an array.
@@ -46,9 +48,27 @@
 32. Rearrange +ve and -ve elements alternately.
 
  */
+void swap(int *a, int *b);
+void segregate_0_1(int A[], int size);
+void segregate_even_odd(int A[], int size);
+void printArray(int *A, int size);
 
+void sorted_merge(int *A, int *B, int sizeA, int sizeB);
 
+void regarrange_pos_neg(int* A, int size);
+void push_zero_to_end(int *A, int size);
 
-
+int maxProfit(int* stock, int size);
+int max_profit_many(int *prices, int length);
+int missingNumber(int* A, int size);
+int findDuplicate(int* A, int size);
+void check_duplicates_bitArray(int * arr, int size);
+void find_peak_in_array(int *A, int length);
+void find_max_in_array(int *A, int length);
+void odd_occurence_of_number(int *A, int size);
+void check_zero_subarray(int* A, int size);
+void countPairs(int *A, int size, int k);
+int countPairsWithDiffK(int arr[], int n, int k);
+void sum_close_to_zero(int *A, int size);
 
 #endif /* ARRAY_H_ */
